@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 // import 'package:form_field_validator/form_field_validator.dart';
 
-// const Gradient primaryGradientColor = LinearGradient(
-//   colors: [
-//     Color(0xfff39060),
-//     Color(0xffc6436c)
-//   ],
-//   begin: Alignment.topCenter,
-//   end: Alignment.bottomCenter,
-// );
+const Gradient primaryGradientColor = LinearGradient(
+  colors: [
+    Color(0xfff39060),
+    Color(0xffc6436c)
+  ],
+  begin: Alignment.topCenter,
+  end: Alignment.bottomCenter,
+);
 
 const Color primaryColor = Color(0xFF504D98);
 
