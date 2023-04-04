@@ -67,6 +67,68 @@ class _EntryPointState extends State<EntryPoint> {
                 color: Theme.of(context).textTheme.bodyText1!.color,
               )),
         ],
+        // bottom: PreferredSize(
+        //   preferredSize: const Size.fromHeight(kBottomNavigationBarHeight),
+        //   child: Container(
+        //     padding: const EdgeInsets.only(top: defaultPadding / 2),
+        //     color: Theme.of(context).brightness == Brightness.light
+        //         ? Colors.white
+        //         : const Color(0xFF101015),
+        //     child: BottomNavigationBar(
+        //       currentIndex: _currentIndex,
+        //       onTap: (index) {
+        //         if (index != _currentIndex) {
+        //           setState(() {
+        //             _currentIndex = index;
+        //           });
+        //         }
+        //       },
+        //       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        //       type: BottomNavigationBarType.fixed,
+        //       selectedItemColor: primaryColor,
+        //       unselectedItemColor: Colors.transparent,
+        //       elevation: 0,
+        //       items: const [
+        //         BottomNavigationBarItem(
+        //           icon: SvgIconWidget(src: "assets/svg/home.svg"),
+        //           activeIcon: SvgIconWidget(
+        //               src: "assets/svg/home.svg", color: primaryColor),
+        //           label: "Trang chủ",
+        //         ),
+        //         BottomNavigationBarItem(
+        //           icon: SvgIconWidget(src: "assets/svg/device.svg"),
+        //           activeIcon: SvgIconWidget(
+        //               src: "assets/svg/device.svg", color: primaryColor),
+        //           label: "Thiết bị",
+        //         ),
+        //         BottomNavigationBarItem(
+        //           icon: SvgIconWidget(src: "assets/svg/flame.svg"),
+        //           activeIcon: SvgIconWidget(
+        //               src: "assets/svg/flame.svg", color: errorColor),
+        //           label: "Cháy nhà",
+        //         ),
+        //         BottomNavigationBarItem(
+        //           icon: SvgIconWidget(src: "assets/svg/discover.svg"),
+        //           activeIcon: SvgIconWidget(
+        //               src: "assets/svg/discover.svg", color: primaryColor),
+        //           label: "Tiện ích",
+        //         ),
+        //         BottomNavigationBarItem(
+        //           icon: SvgIconWidget(src: "assets/svg/notification.svg"),
+        //           activeIcon: SvgIconWidget(
+        //               src: "assets/svg/notification.svg", color: primaryColor),
+        //           label: "Thông báo",
+        //         ),
+        //         BottomNavigationBarItem(
+        //           icon: SvgIconWidget(src: "assets/svg/setting.svg"),
+        //           activeIcon: SvgIconWidget(
+        //               src: "assets/svg/setting.svg", color: primaryColor),
+        //           label: "Cài đặt",
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // ),
 
       ),
       body: PageTransitionSwitcher(
