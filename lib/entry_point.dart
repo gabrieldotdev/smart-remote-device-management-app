@@ -1,6 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../widgets/svgIcon_widget.dart';
 
 import 'constants.dart';
@@ -32,20 +33,22 @@ class _EntryPointState extends State<EntryPoint> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         leading: const SizedBox(),
+        elevation: 0,
         leadingWidth: 0,
         centerTitle: false,
         title: Row(
           children: [
+
             SvgPicture.asset(
-              "assets/svg/logo-iot.svg",
+              "assets/svg/ic-homer-simpson.svg",
               color: primaryColor,
               height: 30,
               width: 30,
             ),
             const SizedBox(width: defaultPadding / 2),
-            const Text(
-              "Central Control",
-              style: TextStyle(
+            Text(
+              "End Of Term",
+              style: GoogleFonts.poppins(
                 color: primaryColor,
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -57,79 +60,78 @@ class _EntryPointState extends State<EntryPoint> {
           IconButton(
               onPressed: () {},
               icon: SvgIconWidget(
-                src: "assets/svg/notification.svg",
+                src: "assets/icon/notification.svg",
                 color: Theme.of(context).textTheme.bodyText1!.color,
               )),
           IconButton(
               onPressed: () {},
               icon: SvgIconWidget(
-                src: "assets/svg/notification.svg",
+                src: "assets/icon/notification.svg",
                 color: Theme.of(context).textTheme.bodyText1!.color,
               )),
         ],
-        // bottom: PreferredSize(
-        //   preferredSize: const Size.fromHeight(kBottomNavigationBarHeight),
-        //   child: Container(
-        //     padding: const EdgeInsets.only(top: defaultPadding / 2),
-        //     color: Theme.of(context).brightness == Brightness.light
-        //         ? Colors.white
-        //         : const Color(0xFF101015),
-        //     child: BottomNavigationBar(
-        //       currentIndex: _currentIndex,
-        //       onTap: (index) {
-        //         if (index != _currentIndex) {
-        //           setState(() {
-        //             _currentIndex = index;
-        //           });
-        //         }
-        //       },
-        //       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-        //       type: BottomNavigationBarType.fixed,
-        //       selectedItemColor: primaryColor,
-        //       unselectedItemColor: Colors.transparent,
-        //       elevation: 0,
-        //       items: const [
-        //         BottomNavigationBarItem(
-        //           icon: SvgIconWidget(src: "assets/svg/home.svg"),
-        //           activeIcon: SvgIconWidget(
-        //               src: "assets/svg/home.svg", color: primaryColor),
-        //           label: "Trang chủ",
-        //         ),
-        //         BottomNavigationBarItem(
-        //           icon: SvgIconWidget(src: "assets/svg/device.svg"),
-        //           activeIcon: SvgIconWidget(
-        //               src: "assets/svg/device.svg", color: primaryColor),
-        //           label: "Thiết bị",
-        //         ),
-        //         BottomNavigationBarItem(
-        //           icon: SvgIconWidget(src: "assets/svg/flame.svg"),
-        //           activeIcon: SvgIconWidget(
-        //               src: "assets/svg/flame.svg", color: errorColor),
-        //           label: "Cháy nhà",
-        //         ),
-        //         BottomNavigationBarItem(
-        //           icon: SvgIconWidget(src: "assets/svg/discover.svg"),
-        //           activeIcon: SvgIconWidget(
-        //               src: "assets/svg/discover.svg", color: primaryColor),
-        //           label: "Tiện ích",
-        //         ),
-        //         BottomNavigationBarItem(
-        //           icon: SvgIconWidget(src: "assets/svg/notification.svg"),
-        //           activeIcon: SvgIconWidget(
-        //               src: "assets/svg/notification.svg", color: primaryColor),
-        //           label: "Thông báo",
-        //         ),
-        //         BottomNavigationBarItem(
-        //           icon: SvgIconWidget(src: "assets/svg/setting.svg"),
-        //           activeIcon: SvgIconWidget(
-        //               src: "assets/svg/setting.svg", color: primaryColor),
-        //           label: "Cài đặt",
-        //         ),
-        //       ],
-        //     ),
-        //   ),
-        // ),
-
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(kBottomNavigationBarHeight),
+          child: Container(
+            padding: const EdgeInsets.only(top: defaultPadding / 2),
+            color: Theme.of(context).brightness == Brightness.light
+                ? Theme.of(context).scaffoldBackgroundColor
+                : const Color(0xFF101015),
+            child: BottomNavigationBar(
+              currentIndex: _currentIndex,
+              onTap: (index) {
+                if (index != _currentIndex) {
+                  setState(() {
+                    _currentIndex = index;
+                  });
+                }
+              },
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+              type: BottomNavigationBarType.fixed,
+              selectedItemColor: primaryColor,
+              unselectedItemColor: Colors.transparent,
+              elevation: 0,
+              items: const [
+                BottomNavigationBarItem(
+                    icon: SvgIconWidget(src: "assets/icon/home.svg"),
+                    activeIcon: SvgIconWidget(
+                        src: "assets/icon/home.svg", color: primaryColor),
+                    label: "------------",
+                ),
+                BottomNavigationBarItem(
+                  icon: SvgIconWidget(src: "assets/icon/device.svg"),
+                  activeIcon: SvgIconWidget(
+                      src: "assets/icon/device.svg", color: primaryColor),
+                  label: "------------",
+                ),
+                BottomNavigationBarItem(
+                  icon: SvgIconWidget(src: "assets/icon/flame.svg"),
+                  activeIcon: SvgIconWidget(
+                      src: "assets/icon/flame.svg", color: errorColor),
+                  label: "------------",
+                ),
+                BottomNavigationBarItem(
+                  icon: SvgIconWidget(src: "assets/icon/discover.svg"),
+                  activeIcon: SvgIconWidget(
+                      src: "assets/icon/discover.svg", color: primaryColor),
+                  label: "------------",
+                ),
+                BottomNavigationBarItem(
+                  icon: SvgIconWidget(src: "assets/icon/notification.svg"),
+                  activeIcon: SvgIconWidget(
+                      src: "assets/icon/notification.svg", color: primaryColor),
+                  label: "------------",
+                ),
+                BottomNavigationBarItem(
+                  icon: SvgIconWidget(src: "assets/icon/setting.svg"),
+                  activeIcon: SvgIconWidget(
+                      src: "assets/icon/setting.svg", color: primaryColor),
+                  label: "------------",
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
       body: PageTransitionSwitcher(
         duration: defaultDuration,
@@ -141,66 +143,6 @@ class _EntryPointState extends State<EntryPoint> {
           );
         },
         child: _pages[_currentIndex],
-      ),
-      bottomNavigationBar: Container(
-        padding: const EdgeInsets.only(top: defaultPadding / 2),
-        color: Theme.of(context).brightness == Brightness.light
-            ? Colors.white
-            : const Color(0xFF101015),
-        child: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            if (index != _currentIndex) {
-              setState(() {
-                _currentIndex = index;
-              });
-            }
-          },
-          backgroundColor: Theme.of(context).brightness == Brightness.light
-              ? Colors.white
-              : const Color(0xFF101015),
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: primaryColor,
-          unselectedItemColor: Colors.transparent,
-          items: const [
-            BottomNavigationBarItem(
-              icon: SvgIconWidget(src: "assets/svg/home.svg"),
-              activeIcon: SvgIconWidget(
-                  src: "assets/svg/home.svg", color: primaryColor),
-              label: "Trang chủ",
-            ),
-            BottomNavigationBarItem(
-              icon: SvgIconWidget(src: "assets/svg/device.svg"),
-              activeIcon: SvgIconWidget(
-                  src: "assets/svg/device.svg", color: primaryColor),
-              label: "Thiết bị",
-            ),
-            BottomNavigationBarItem(
-              icon: SvgIconWidget(src: "assets/svg/flame.svg"),
-              activeIcon:
-                  SvgIconWidget(src: "assets/svg/flame.svg", color: errorColor),
-              label: "Cháy nhà",
-            ),
-            BottomNavigationBarItem(
-              icon: SvgIconWidget(src: "assets/svg/discover.svg"),
-              activeIcon: SvgIconWidget(
-                  src: "assets/svg/discover.svg", color: primaryColor),
-              label: "Tiện ích",
-            ),
-            BottomNavigationBarItem(
-              icon: SvgIconWidget(src: "assets/svg/notification.svg"),
-              activeIcon: SvgIconWidget(
-                  src: "assets/svg/notification.svg", color: primaryColor),
-              label: "Thông báo",
-            ),
-            BottomNavigationBarItem(
-              icon: SvgIconWidget(src: "assets/svg/setting.svg"),
-              activeIcon: SvgIconWidget(
-                  src: "assets/svg/setting.svg", color: primaryColor),
-              label: "Cài đặt",
-            ),
-          ],
-        ),
       ),
     );
   }
