@@ -1,4 +1,5 @@
 const String entryPointScreenRoute = "entry_point";
+const String onboardingScreenRoute = "onboarding";
 
 const String homeScreenRoute = "home";
 const String deviceScreenRoute = "device";

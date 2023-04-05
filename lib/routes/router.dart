@@ -34,6 +34,11 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (context) => const SettingScreenPage(),
       );
 
+    case onboardingScreenRoute:
+      return MaterialPageRoute(
+        builder: (context) => const OnboardingScreenPage(),
+      );
+
     case entryPointScreenRoute:
       return MaterialPageRoute(
         builder: (context) => const EntryPoint(),

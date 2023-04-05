@@ -9,4 +9,5 @@ export '/screens/notification_screen.dart';
 export '/screens/setting_screen.dart';
 
 // Page 2
+export '/screens/onboarding_screen.dart';
 
