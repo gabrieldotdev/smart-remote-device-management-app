@@ -25,6 +25,7 @@ class _DegreeWidgetState extends State<DegreeWidget> {
       FirebaseDatabase.instance.ref("nhietDo");
   late final DatabaseReference doAm = FirebaseDatabase.instance.ref("doAm");
 
+  @override
   void initState() {
     super.initState();
     getItems();
