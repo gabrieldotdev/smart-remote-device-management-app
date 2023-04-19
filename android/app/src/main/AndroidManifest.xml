@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.srdm.smart_remote_device_management">
    <application
-        android:label="smart_remote_device_management"
+        android:label="Con mèo"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

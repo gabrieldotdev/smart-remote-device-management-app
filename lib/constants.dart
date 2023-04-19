@@ -10,7 +10,7 @@ const Gradient primaryGradientColor = LinearGradient(
   end: Alignment.bottomCenter,
 );
 
-const Color primaryColor = Color(0xFF504D98);
+const Color primaryColor = Color(0xFF2D2D2D);
 
 const MaterialColor primaryMaterialColor =
 MaterialColor(0xFF9581FF, <int, Color>{

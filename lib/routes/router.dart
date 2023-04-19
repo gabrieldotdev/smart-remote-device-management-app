@@ -19,9 +19,9 @@ Route<dynamic> generateRoute(RouteSettings settings) {
         builder: (context) => const FlameScreenPage(),
       );
 
-    case discoverScreenRoute:
+    case exploreScreenRoute:
       return MaterialPageRoute(
-        builder: (context) => const DiscoverScreenPage(),
+        builder: (context) => const ExploreScreenPage(),
       );
 
     case notificationScreenRoute:
